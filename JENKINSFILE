@@ -1,0 +1,9 @@
+node {
+    stage('Git Clone') {
+        git 'https://github.com/Revature-1704-Java/reverse-string-quiz-emmanuelgeorge93.git'
+    }
+    
+    stage('Build/Test') {
+        bat 'mvn clean package'
+    }
+}
